@@ -1,16 +1,18 @@
 package br.com.letscode.turmaitau;
 
+import java.util.Scanner;
+
 public class ChapaMetalica {
 
 
     public static void main(String[] args) {
-        double ladoa;
-        int ladob;
-        int ladoc;
-        int ladod;
-        int [] [] chapa;
-        int [] colunas;
-        double temperaturaInterior = 0.0;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("dimensão da chapa (linha e coluna");
+        int linhas = scanner.nextInt();
+        int colunas = scanner.nextInt();
+
+        double [] [] chapa = new double[linhas][colunas];
 
 
 
